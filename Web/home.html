@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Tourism</title>
+  <style>
+    .Logo img{
+      max-width: 40%;
+    }
+    header{
+      display: flex;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      align-items: center;
+
+    }
+    .nav-menu{
+      display: flex;
+    }
+    .nav-menu ul{
+      display: flex;
+    }
+    .nav-menu li{
+      list-style: none;
+      margin-right: 20px;
+    }
+    .nav-menu li:last-child{
+      margin-right: 0;
+    }
+    .nav-menu a{
+      text-decoration: none;
+      font-family: "Dongle-bold";
+      font-size: 1.6rem;
+      color: #333;
+      transition: all ease 0.3s;
+    }
+    .nav-menu a:hover{
+      color: #ff7f50;
+    }
+
+    .hero{
+      position: relative;
+      height: 600px;
+    }
+    .hero-content img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .differ {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,50%);
+      text-align: center;
+      color: black;
+    }
+
+    .differ h1{
+      font-family: "Dongle-bold";
+      font-size: 4rem;
+    }
+    .differ p{
+      font-family: "Dongle-regular";
+      font-size: 1.8rem;
+      margin-top: -20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .her-button{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff7f50;
+      border-radius: 50px;
+      padding: 12px 30px;
+      font-family:"Dongle-light";
+      font-size: 1.6rem;
+      transition: all ease 0.3s;
+    }
+
+    .her-button:hover{
+      background-color: #333;
+    }
+    .heritage{
+      font-size: 2.4rem;
+      font-family: "Dongle-bold";
+      margin-bottom: 40px;
+      margin: 40px 80px;
+      text-align: center;
+    }
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 40px;
+    }
+    .destination-items img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .destination-items {
+      text-align: left;
+    }
+    .destination-items h3{
+      font-size: 2rem;
+    }
+    .destination-items p{
+      font-size: 1.4rem;
+      line-height: 1;
+      font-family: "Dongle-regular";
+    }
+    .heritage h2{
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <header>
+      <div>
+        <a href="#" class ="Logo">
+          <img src="Images/logo.jpg"/>
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="heritage.html" target="_self">Heritage</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html" target="_self">Hotels</a></li>
+        </ul>
+      </nav>
+    </header>
+  </header>
+  <main>
+    <section class = "hero">
+      <div class="hero-content">
+        <img src="Images/download (1).jpg"/>
+      </div>
+      <div class ="differ">
+        <h1>Welcome To India's Tourism Website</h1>
+        <p>In this Website you Find Amazing places to travel in India with Hotel Bookings and You get a gallery for photo's of the places.</p>
+        <a href="#" class = "her-button">Here You go</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

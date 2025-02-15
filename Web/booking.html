@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Registration</title>
+    <style>
+      a{
+    color:aqua;
+    position: relative;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 2px;
+    background: aqua;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+a:hover{
+
+ cursor: pointer;   
+}
+.header{
+display: flex;
+flex-direction: row;
+background-color: #1a1a1a;
+padding-left: 80px;
+gap: 40px;
+height:50px;
+align-items: center;
+position: relative;
+justify-content: space-between;
+padding-right: 80px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            font-size: 16px;
+            color: #34495e;
+           
+        }
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        Button {
+            background-color: rgb(69, 69, 222);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        Button:hover {
+            background-color: rgb(69, 69, 222);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+         <a href="home.html" target="_self">Back to Home </a>    
+      </div>
+
+<div class="container">
+    <h2>Tourism Site Registration</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Preferred Travel Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="Taj Mahal">Taj Mahal</option>
+                <option value="Elephanta Caves">Elephanta Caves</option>
+                <option value="Red Fort">Red Fort</option>
+                <option value="Fatehpur Sikri">Fatehpur Sikri</option>
+                <option value="Allora Caves">Allora Caves</option>
+                <option value="Qutub Minar">Qutub Minar</option>
+            </select>
+        </div>
+        <div class="form-group">
+                <label for="amount">Amount to Pay:</label>
+
+                <input type="number" id="amount" name="amount" placeholder="Enter amount in USD" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment-gateway">Payment Gateway:</label>
+                <select id="payment-gateway" name="payment-gateway" required>
+                    <option value="paypal">PayPal</option>
+                    <option value="stripe">Paytem</option>
+                    <option value="razorpay">Rupay</option>
+                    <option value="credit-card">Credit Card</option>
+                </select>
+            </div>
+
+        <div class="form-group">
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your plans"></textarea>
+        </div>
+
+        <button>
+            <a href="home.html" target="_self">Register</a>
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

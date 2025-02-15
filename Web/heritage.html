@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heritage</title>
+        <style>
+    .differ {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,50%);
+      text-align: center;
+      color: #fff;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        background-color: #1a1a1a;
+        padding-left: 80px;
+        gap: 40px;
+        height:50px;
+        align-items: center;
+        position: relative;
+    }
+    a{
+        color:blueviolet;
+        position: relative;
+        text-decoration: none;
+    }
+    a::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        width: 0;
+        height: 2px;
+        background: aqua;
+        border-radius: 50px;
+        transition: all .3s ease;
+    }
+    a:hover::after{
+        width: 100%;
+        left: 0;
+        cursor: pointer;
+    }
+    a:hover{
+        background-color: black;
+        cursor: pointer;   
+    }
+    .differ h1{
+      font-family: "Dongle-bold";
+      font-size: 4rem;
+    }
+    .differ p{
+      font-family: "Dongle-regular";
+      font-size: 1.8rem;
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+
+    .her-button{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff7f50;
+      border-radius: 50px;
+      padding: 12px 30px;
+      font-family:"Dongle-light";
+      font-size: 1.6rem;
+      transition: all ease 0.3s;
+    }
+
+    .her-button:hover{
+      background-color: #333;
+    }
+    .heritage{
+      font-size: 2.4rem;
+      font-family: "Dongle-bold";
+      margin-bottom: 40px;
+      margin: 40px 80px;
+      text-align: center;
+    }
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 40px;
+    }
+    .destination-items img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .destination-items {
+      text-align: left;
+    }
+    .destination-items h3{
+      font-size: 2rem;
+    }
+    .destination-items p{
+      font-size: 1.4rem;
+      line-height: 1;
+      font-family: "Dongle-regular";
+    }
+    .heritage h2{
+      margin-bottom: 20px;
+    }
+        </style>
+    </head>
+    <body>
+        <main>
+              <section class="heritage">
+                <div class="header">
+                    <a href="home.html" target="_self">Return Home</a>
+                    
+                 </div>
+                <div class="destination-grid">
+                  <div class="destination-items">
+                    <img src="Images/Taj Mahal.jpeg"/>
+                    <h3>Taj Mahal</h3>
+                    <p>
+                      The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage". It is regarded as one of the best examples of Mughal architecture and a symbol of Indian history. The Taj Mahal is a major tourist attraction and attracts more than five million visitors a year. In 2007, it was declared a winner of the New 7 Wonders of the World initiative.
+                    </p>
+                  </div>
+                  <div class="destination-items">
+                    <img src="Images/Delhi fort.jpg"/>
+                    <h3>Red Fort</h3>
+                    <p>
+                      The Red Fort, also known as Lal Qila (Hindustani: [laːl qiːlaː]) is a historic Mughal fort in Delhi, India, that served as the primary residence of the Mughal emperors. Emperor Shah Jahan commissioned the construction of the Red Fort on 12 May 1639, following his decision to relocate the Mughal capital from Agra to Delhi. Originally adorned in red and white, the fort's design is attributed to Ustad Ahmad Lahori, the architect behind the Taj Mahal. The Red Fort represents the pinnacle of Mughal architecture during Shah Jahan's reign, blending Persian palace influences with indigenous Indian architectural traditions.
+                    </p>
+                  </div>
+                  <div class="destination-items">
+                    <img src="Images/Qutb Minar.jpg"/>
+                    <h3>Qutub Minar</h3>
+                    <p>
+                      The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and victory tower comprising the Qutb complex, which lies at the site of Delhi's oldest fortified city, Lal Kot, founded by the Tomar Rajputs.[3] It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India.[4][5] It was mostly built between 1199 and 1220, contains 399 steps, and is one of the most-frequented heritage spots in the city.[6][7][4] After defeating Prithviraj Chauhan, the last Hindu ruler of Delhi before the Ghurid conquest of the region,[8][9]Qutab-ud-din Aibak initiated the construction of the victory tower, but only managed to finish the first level. It was to mark the beginning of Islamic rule in the region. Successive dynasties of the Delhi Sultanate continued the construction, and, in 1368, Firuz Shah Tughlaq rebuilt the top parts and added a cupola.[10]
+                    </p>
+                  </div>
+                  <div class="destination-items">
+                    <img src="Images/Konarka Temple.jpg"/>
+                    <h3>Konarka Temple</h3>
+                    <p>
+                      Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.[1][2] The temple is attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE.[3][4]
+                    </p>
+                  </div>
+                  <div class="destination-items">
+                    <img src="Images/Fatehpur Sikri.jpg"/>
+                    <h3>Fatehpur Sikri</h3>
+                    <p>
+                      Fatehpur Sikri (Hindi: [ˈfətɛɦpʊɾ ˈsiːkɾiː]) is a town in the Agra District of Uttar Pradesh, India. Situated 35.7 kilometres (22.2 mi) from the district headquarters of Agra,[3] Fatehpur Sikri itself was founded as the capital of the Mughal Empire in 1571 by Emperor Akbar, serving this role from 1571 to 1585, when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610
+                    </p>
+                  </div>
+                  <div class="destination-items">
+                    <img src="Images/Elephanta Caves Trimurti.jpg"/>
+                    <h3>Elephanta Caves</h3>
+                    <p>
+                      The Elephanta Caves are a collection of cave temples predominantly dedicated to the Hindu god Shiva, which have been designated a UNESCO World Heritage Site.[1][2][3] They are on Elephanta Island, or Gharapuri (literally meaning "the city of caves"),[4] in Mumbai Harbour, 10 kilometres (6.2 mi) east of Mumbai in the Indian state of Mahārāshtra. The island, about 2 kilometres (1.2 mi) west of the Jawaharlal Nehru Port, consists of five Hindu caves, a few Buddhist stupa mounds that date back to the 2nd century BCE,[5][6][7] and two Buddhist caves with water tanks.
+                    </p>
+                  </div>
+                </div>
+              </section>
+        </main>
+    </body>
+</html>
